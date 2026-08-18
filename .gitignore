@@ -1,0 +1,43 @@
+# Local credentials and environment overrides
+.env
+.env.*
+!.env.example
+!.env_example
+
+# Dependencies and generated output
+**/node_modules/
+**/.dart_tool/
+**/.pub-cache/
+**/build/
+**/coverage/
+**/.firebase/
+
+# Local tooling and runtime files
+.agents/
+.codex/
+.git-legacy-backup/
+**/.codex-logs/
+*.log
+*.tmp
+
+# Editor and operating-system files
+**/.idea/
+**/.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Archives and local certificates
+*.zip
+*.pem
+cert_directory/
+
+# Cloud service credentials (client-side Firebase configuration is handled separately)
+*firebase-adminsdk*.json
+*service-account*.json
+*serviceAccount*.json
+
+# Firebase application configuration supplied per environment
+**/GoogleService-Info.plist
+**/google-services.json
+**/firebase-messaging-sw.js

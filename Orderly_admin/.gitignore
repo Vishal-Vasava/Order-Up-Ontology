@@ -1,0 +1,15 @@
+node_modules
+package-lock.json
+.DS_Store
+build
+build.zip
+.zip
+
+deploy1.sh
+yarn.lock
+*.sh
+*.pem
+src/.DS_Store
+.env
+
+

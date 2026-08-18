@@ -1,0 +1,30 @@
+@prefix orderup: <https://orderlyinc.com/ontology/orderup#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+orderup:Customer a rdfs:Class .
+orderup:Producer a rdfs:Class .
+orderup:Product a rdfs:Class .
+orderup:InventoryItem a rdfs:Class .
+orderup:Order a rdfs:Class .
+orderup:OrderLine a rdfs:Class .
+orderup:DeliveryAgent a rdfs:Class .
+orderup:Address a rdfs:Class .
+orderup:TemperatureObservation a rdfs:Class .
+orderup:ReturnRequest a rdfs:Class .
+
+orderup:placedBy a rdf:Property ; rdfs:domain orderup:Order ; rdfs:range orderup:Customer .
+orderup:contains a rdf:Property ; rdfs:domain orderup:Order ; rdfs:range orderup:OrderLine .
+orderup:referencesProduct a rdf:Property ; rdfs:domain orderup:OrderLine ; rdfs:range orderup:Product .
+orderup:suppliedBy a rdf:Property ; rdfs:domain orderup:Product ; rdfs:range orderup:Producer .
+orderup:hasInventory a rdf:Property ; rdfs:domain orderup:Product ; rdfs:range orderup:InventoryItem .
+orderup:deliveredBy a rdf:Property ; rdfs:domain orderup:OrderLine ; rdfs:range orderup:DeliveryAgent .
+orderup:hasDestination a rdf:Property ; rdfs:domain orderup:Order ; rdfs:range orderup:Address .
+orderup:hasTemperatureObservation a rdf:Property ; rdfs:domain orderup:OrderLine ; rdfs:range orderup:TemperatureObservation .
+orderup:hasReturnRequest a rdf:Property ; rdfs:domain orderup:OrderLine ; rdfs:range orderup:ReturnRequest .
+orderup:quantity a rdf:Property ; rdfs:range xsd:integer .
+orderup:availableQuantity a rdf:Property ; rdfs:range xsd:integer .
+orderup:statusCode a rdf:Property ; rdfs:range xsd:integer .
+orderup:observedTemperature a rdf:Property ; rdfs:range xsd:decimal .
+

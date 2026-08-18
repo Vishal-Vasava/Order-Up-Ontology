@@ -1,0 +1,8 @@
+#Initails files
+/.env
+/admin.zip
+/cgi-bin
+/.well-known
+/.htaccess
+node_modules/
+cert_directory/
