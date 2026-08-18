@@ -100,13 +100,13 @@ GET /semantic/products/:id/availability
 GET /semantic/deliveries/:id/context
 ```
 
-See [Semantic API documentation](orderlyinc-orderly_node_api/binita_orderlyinc-orderly_node_api-b06abde36f0a/SEMANTIC_API.md) and the [ontology vocabulary](orderlyinc-orderly_node_api/binita_orderlyinc-orderly_node_api-b06abde36f0a/app/ontology/orderup.ttl).
+See [Semantic API documentation](orderlyinc-orderly_node_api/orderup-api/SEMANTIC_API.md) and the [ontology vocabulary](orderlyinc-orderly_node_api/orderup-api/app/ontology/orderup.ttl).
 
 ## Repository map
 
 | Path | Purpose |
 |---|---|
-| `orderlyinc-orderly_node_api/binita_orderlyinc-orderly_node_api-b06abde36f0a` | Node.js API, MySQL integration, semantic projection, ontology, and tests. |
+| `orderlyinc-orderly_node_api/orderup-api` | Node.js API, MySQL integration, semantic projection, ontology, and tests. |
 | `Orderly_admin` | React administration portal. |
 | `Order-Up-mobile app` | Flutter customer, store-manager, and delivery application with web support. |
 | `OrderUp_Ontology_Case_Study` | Architecture decisions, diagrams, ontology planning, and implementation history. |
